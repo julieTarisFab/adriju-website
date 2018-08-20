@@ -1,0 +1,24 @@
+/**
+ * All of the CSS for your dashboard-specific functionality should be
+ * included in this file.
+ */
+ 
+.tab.active {
+    display:block;
+}
+
+#poststuff .tabs h3 {
+    background: white;
+    padding: 20px 0px 5px;
+    margin: 0px;
+}
+
+#postsuff .tabs h2 {
+	padding-bottom: 0px;
+}
+
+#poststuff h2.insta-nav-tab-wrapper {
+	padding-bottom: 0px;
+	border-bottom: none;
+	display: table;
+}

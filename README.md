@@ -84,10 +84,8 @@ machine design
 electronic
 digital fabrication
 
-Commandes digital fabrication (design, textiles etc..)
-
-Contact
-
-A propos
-Page Adri
-Page Juju
+* Commandes digital fabrication (design, textiles etc..)
+* Contact
+* A propos
+  * Page Adri
+  * Page Juju

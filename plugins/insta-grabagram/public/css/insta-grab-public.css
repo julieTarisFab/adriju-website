@@ -1,0 +1,29 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ 
+#instagrab li {
+    width: 32.333%;
+    display: inline-block;
+    padding: 0.5%;
+}
+
+.instagrab-notice {
+	padding: 10px;
+	position: absolute;
+	top:0;
+	width: 100%;
+	margin-top:32px;
+	z-index: 2000;
+}
+.instagrab-notice.success {
+	background: green;
+	color: #fff;
+	text-align: center;
+}
+.instagrab-notice.error {
+	background: red;
+	color: #fff;
+	text-align: center;
+}
