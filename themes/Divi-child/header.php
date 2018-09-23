@@ -18,7 +18,7 @@
 	<?php elegant_canonical(); ?>
 
 	<?php do_action( 'et_head_meta' ); ?>
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/esm/popper-utils.min.js">
@@ -215,13 +215,13 @@
 				// 	? $user_logo
 				// 	: $template_directory_uri . '/images/logo.png';
 			?>
-				<div id="stuff" class="logo_container">
+				<!-- <div id="stuff" class="logo_container"> -->
 					<!-- <span class="logo_helper"></span> -->
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-            Philippe</br>Taris
+					<!-- <a href="<?php // echo esc_url( home_url( '/' ) ); ?>"> -->
+            <!-- Philippe</br>Taris -->
 						<!-- <img src="<?php // echo esc_attr( $logo ); ?>" alt="<?php // echo esc_attr( get_bloginfo( 'name' ) ); ?>" id="logo" data-height-percentage="<?php // echo esc_attr( et_get_option( 'logo_height', '54' ) ); ?>" /> -->
-					</a>
-				</div>
+					<!-- </a> -->
+				<!-- </div> -->
 				<div id="et-top-navigation" data-height="<?php echo esc_attr( et_get_option( 'menu_height', '66' ) ); ?>" data-fixed-height="<?php echo esc_attr( et_get_option( 'minimized_menu_height', '40' ) ); ?>">
 					<?php if ( ! $et_slide_header || is_customize_preview() ) : ?>
 						<nav id="top-menu-nav">

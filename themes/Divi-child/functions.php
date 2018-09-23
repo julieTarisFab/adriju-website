@@ -26,19 +26,19 @@ add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css' );
 // END ENQUEUE PARENT ACTION
 
 function ajout_assets() {
-  wp_enqueue_style( 'font_awesome', trailingslashit(get_stylesheet_directory_uri()).'assets/font-awesome-4.7.0/css/font-awesome.min.css',array() );
-  wp_enqueue_style( 'font_awesome5', trailingslashit(get_stylesheet_directory_uri()).'assets/font-awesome-5/web-fonts-with-css/css/fontawesome-all.min.css',array() );
-  wp_enqueue_style( 'bootstrap_css', trailingslashit(get_stylesheet_directory_uri()).'assets/bootstrap/css/bootstrap.min.css',array() );
-  wp_enqueue_style( 'owl_default_css', trailingslashit(get_stylesheet_directory_uri()).'assets/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css',array() );
-  wp_enqueue_style( 'owl_theme_default_css', trailingslashit(get_stylesheet_directory_uri()).'assets/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css',array() );
+  wp_enqueue_style( 'font_awesome', trailingslashit(get_stylesheet_directory_uri()).'assets/lib/font-awesome-4.7.0/css/font-awesome.min.css',array() );
+  wp_enqueue_style( 'font_awesome5', trailingslashit(get_stylesheet_directory_uri()).'assets/lib/font-awesome-5/web-fonts-with-css/css/fontawesome-all.min.css',array() );
+  wp_enqueue_style( 'bootstrap_css', trailingslashit(get_stylesheet_directory_uri()).'assets/lib/bootstrap/css/bootstrap.min.css',array() );
+  wp_enqueue_style( 'owl_default_css', trailingslashit(get_stylesheet_directory_uri()).'assets/lib/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css',array() );
+  wp_enqueue_style( 'owl_theme_default_css', trailingslashit(get_stylesheet_directory_uri()).'assets/lib/OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css',array() );
+  wp_enqueue_script('jquery');
+  wp_enqueue_script('bootstrapBundle_js', trailingslashit(get_stylesheet_directory_uri()).'assets/lib/bootstrap/js/bootstrap.bundle.min.js', array('popper', 'jquery'), false, true );
+  wp_enqueue_script('bootstrap_js', trailingslashit(get_stylesheet_directory_uri()).'assets/lib/bootstrap/js/bootstrap.min.js', array('popper', 'jquery'), false, true );
+  wp_enqueue_script('owl_js', trailingslashit(get_stylesheet_directory_uri()).'assets/lib/OwlCarousel2-2.2.1/dist/owl.carousel.min.js', array('jquery'), false, true );
+  wp_enqueue_script('script_perso', trailingslashit(get_stylesheet_directory_uri()).'script.js', array('jquery'), false, true );
   // wp_enqueue_style( 'style_perso', trailingslashit(get_stylesheet_directory_uri()).'style.css',array() );
   // philippetaris-photographe.com\wp-content\themes\Divi-child\assets\OwlCarousel2-2.2.1\dist\assets\owl.theme.default.min.css
   // wp_enqueue_script('popper', trailingslashit(get_stylesheet_directory_uri()).'assets/popperJs_perso/popper.js', array('jquery'), false,  true );
-  wp_enqueue_script('jquery');
-  wp_enqueue_script('bootstrapBundle_js', trailingslashit(get_stylesheet_directory_uri()).'assets/bootstrap/js/bootstrap.bundle.min.js', array('popper', 'jquery'), false, true );
-  wp_enqueue_script('bootstrap_js', trailingslashit(get_stylesheet_directory_uri()).'assets/bootstrap/js/bootstrap.min.js', array('popper', 'jquery'), false, true );
-  wp_enqueue_script('owl_js', trailingslashit(get_stylesheet_directory_uri()).'assets/OwlCarousel2-2.2.1/dist/owl.carousel.min.js', array('jquery'), false, true );
-  wp_enqueue_script('script_perso', trailingslashit(get_stylesheet_directory_uri()).'script.js', array('jquery'), false, true );
 };
 
 add_action( 'wp_enqueue_scripts', 'ajout_assets' );
